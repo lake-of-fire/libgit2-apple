@@ -53,11 +53,11 @@ let package = Package(
         .target(
             name: "CGit",
             publicHeadersPath: "./",
+		dependencies: ["libgit2"],
 			linkerSettings: [
 				.linkedLibrary("iconv"),
 				.linkedLibrary("z")
-			],
-		dependencies: ["libgit2"]
+			]
         ),
         .binaryTarget(
             name: "libgit2",
