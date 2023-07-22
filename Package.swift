@@ -30,8 +30,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Git",
-            targets: ["Git"]
+            name: "CGit",
+            targets: ["CGit"]
         ),
     ],
     dependencies: [
@@ -41,7 +41,7 @@ let package = Package(
         )
     ],
     targets: [
-        .target(
+        /*.target(
             name: "Git",
             dependencies: [
                 "CGit",
@@ -49,13 +49,15 @@ let package = Package(
 				.product(name: "SSH2", package: "libssh2-apple")
             ]
         ),
+	    */
         .target(
             name: "CGit",
             publicHeadersPath: "./",
 			linkerSettings: [
 				.linkedLibrary("iconv"),
 				.linkedLibrary("z")
-			]
+			],
+		dependencies: ["libgit2"]
         ),
         .binaryTarget(
             name: "libgit2",
