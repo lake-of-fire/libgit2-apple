@@ -52,8 +52,8 @@ let package = Package(
 	    */
         .target(
             name: "CGit",
-            publicHeadersPath: "./",
 		dependencies: ["libgit2"],
+            publicHeadersPath: "./",
 			linkerSettings: [
 				.linkedLibrary("iconv"),
 				.linkedLibrary("z")
