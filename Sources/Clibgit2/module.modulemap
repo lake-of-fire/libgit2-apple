@@ -1,4 +1,4 @@
-module CGit {
+module Clibgit2 {
     header "CGit.h"
     export *
 }
