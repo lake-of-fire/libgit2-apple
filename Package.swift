@@ -30,8 +30,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "CGit",
-            targets: ["CGit"]
+            name: "Clibgit2",
+            targets: ["Clibgit2"]
         ),
     ],
     dependencies: [
@@ -51,18 +51,16 @@ let package = Package(
         ),
 	    */
         .target(
-            name: "CGit",
-		dependencies: ["libgit2"],
+            name: "Clibgit2",
+            dependencies: ["libgit2"],
             publicHeadersPath: "./",
 			linkerSettings: [
 				.linkedLibrary("iconv"),
-				.linkedLibrary("z")
-			]
-        ),
+				.linkedLibrary("z"),
+			]),
         .binaryTarget(
             name: "libgit2",
             url: "https://github.com/mfcollins3/libgit2-apple/releases/download/0.1.0/libgit2.zip",
-            checksum: "488ea08d20ea4a651f56d271e8f793e92f07dd03e77447ab8dfd8846680a9cae"
-        )
+            checksum: "488ea08d20ea4a651f56d271e8f793e92f07dd03e77447ab8dfd8846680a9cae")
     ]
 )
