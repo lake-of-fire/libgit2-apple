@@ -33,12 +33,13 @@ let package = Package(
             name: "Clibgit2",
             targets: ["Clibgit2"]
         ),
+        .library(name: "libgit2", targets: ["libgit2"]),
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/mfcollins3/libssh2-apple.git",
-            .upToNextMajor(from: "0.1.0")
-        )
+//        .package(
+//            url: "https://github.com/mfcollins3/libssh2-apple.git",
+//            .upToNextMajor(from: "0.1.0")
+//        )
     ],
     targets: [
         /*.target(
