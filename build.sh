@@ -145,7 +145,7 @@ xcodebuild -create-xcframework \
     -headers $ROOT_PATH/build/MAC_CATALYST/include \
     -output $LIBSSH2_PATH
 
-zip -r libgit2.zip libgit2.xcframework
+#zip -r libgit2.zip libgit2.xcframework
 
 echo "Done; cleaning up"
 rm -rf $TEMP_PATH
