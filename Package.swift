@@ -30,8 +30,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Clibgit2",
-            targets: ["Clibgit2"]
+            name: "Clibgit2macos",
+            targets: ["Clibgit2macos"]
         ),
         .library(name: "libgit2", targets: ["libgit2"]),
     ],
@@ -52,7 +52,7 @@ let package = Package(
         ),
 	    */
         .target(
-            name: "Clibgit2",
+            name: "Clibgit2macos",
             dependencies: ["libgit2"],
             publicHeadersPath: "./",
 			linkerSettings: [
