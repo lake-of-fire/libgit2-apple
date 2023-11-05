@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 
 // Copyright 2022 Michael F. Collins, III
 //
@@ -55,6 +55,7 @@ let package = Package(
             name: "Clibgit2macos",
             dependencies: ["libgit2"],
             publicHeadersPath: "./",
+            swiftSettings: [.interoperabilityMode(.Cxx)],
 			linkerSettings: [
 				.linkedLibrary("iconv"),
 				.linkedLibrary("z"),
