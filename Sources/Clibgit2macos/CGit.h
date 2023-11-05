@@ -19,3 +19,4 @@
 // DEALINGS IN THE SOFTWARE.
 
 //#import <git2.h>
+#import "git2.h"
