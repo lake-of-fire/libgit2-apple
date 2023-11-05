@@ -55,7 +55,7 @@ let package = Package(
             name: "Clibgit2macos",
             dependencies: ["libgit2"],
             publicHeadersPath: "./",
-            swiftSettings: [.interoperabilityMode(.Cxx)],
+            swiftSettings: [.interoperabilityMode(.C)],
 			linkerSettings: [
 				.linkedLibrary("iconv"),
 				.linkedLibrary("z"),
