@@ -25,8 +25,8 @@ import PackageDescription
 let package = Package(
     name: "Clibgit2macos",
     platforms: [
-        .iOS(.v13),
-        .macOS(.v10_13)
+        .iOS(.v15),
+        .macOS(.v13)
     ],
     products: [
         .library(
